@@ -1,0 +1,24 @@
+
+.outer-box{
+  width:200px;
+  height: 200px;
+  border: 2px solid navy;
+  position: relative;
+}
+.box{
+  width:100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  animation: 2s running-boox infinite cubic-bezier(1,1.52,.02,-0.58);
+  
+}
+
+@keyframes running-boox{
+    0%{left: 0px;top: 0px;}
+    25%{left: 100px;top: 0px;background: gold;}
+    50%{left: 100px;top: 100px;background: lightblue;}
+    75%{left: 0px;top: 100px;background: lightgreen}
+    100%{left: 0px;top: 0px;background: red;}
+
+}
